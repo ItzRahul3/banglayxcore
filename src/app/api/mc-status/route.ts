@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import type { McStatus } from "@/lib/types";
 
+export const runtime = "edge";
+
 export const dynamic = "force-dynamic";
 
 const CACHE_MS = 30_000;

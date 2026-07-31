@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import type { VoteLink } from "@/lib/types";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 export const metadata = { title: "Vote — BanglaYX CORE" };
 export const revalidate = 60;
 

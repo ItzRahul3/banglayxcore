@@ -3,6 +3,8 @@ import { getSiteSettings } from "@/lib/settings";
 import type { Rank } from "@/lib/types";
 import RanksGrid from "@/components/RanksGrid";
 
+export const runtime = "edge";
+
 export const metadata = { title: "Ranks — BanglaYX CORE" };
 export const revalidate = 60;
 

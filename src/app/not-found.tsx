@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Compass } from "lucide-react";
 
+export const runtime = "edge";
+
 export default function NotFound() {
   return (
     <section className="mx-auto flex min-h-[70vh] max-w-lg flex-col items-center justify-center px-4 text-center">

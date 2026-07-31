@@ -1,5 +1,7 @@
 import { ShieldCheck, Ban, MessagesSquare, Hammer, UserX, Megaphone } from "lucide-react";
 
+export const runtime = "edge";
+
 export const metadata = { title: "Rules — BanglaYX CORE" };
 
 const RULES = [

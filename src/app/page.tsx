@@ -1,4 +1,6 @@
 import {
+
+export const runtime = "edge";
   Package, Coins, Swords, MapPinned, Briefcase, Gift,
   ThumbsUp, Boxes, Shuffle, Users2, Gauge,
 } from "lucide-react";

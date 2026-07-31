@@ -2,6 +2,8 @@ import { createClient } from "@/lib/supabase/server";
 import type { StaffMember } from "@/lib/types";
 import StaffGrid from "@/components/StaffGrid";
 
+export const runtime = "edge";
+
 export const metadata = { title: "Staff — BanglaYX CORE" };
 export const revalidate = 60;
 
