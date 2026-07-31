@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0d0a;
+  color: #e9f2e6;
+  font-feature-settings: "ss01";
+}
+
+/* Light mode overrides (toggle adds .light to <html>) */
+html.light body {
+  background-color: #f3f6f1;
+  color: #131a12;
+}
+html.light .invert-surface {
+  background-color: #ffffff;
+  border-color: #d9e2d6;
+}
+
+/* ---- Minecraft "inventory slot" notch, used on cards ---- */
+.slot-notch {
+  clip-path: polygon(
+    0 10px, 10px 0,
+    calc(100% - 10px) 0, 100% 10px,
+    100% calc(100% - 10px), calc(100% - 10px) 100%,
+    10px 100%, 0 calc(100% - 10px)
+  );
+}
+
+.slot-notch-sm {
+  clip-path: polygon(
+    0 6px, 6px 0,
+    calc(100% - 6px) 0, 100% 6px,
+    100% calc(100% - 6px), calc(100% - 6px) 100%,
+    6px 100%, 0 calc(100% - 6px)
+  );
+}
+
+/* Pixelated ore-vein background texture for hero */
+.ore-veins {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(85,255,85,0.10) 0px, transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(230,185,60,0.08) 0px, transparent 35%),
+    radial-gradient(circle at 50% 80%, rgba(85,255,85,0.07) 0px, transparent 45%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0a0d0a; }
+::-webkit-scrollbar-thumb { background: #243024; border: 2px solid #0a0d0a; }
+::-webkit-scrollbar-thumb:hover { background: #2fae2f; }
+
+/* Custom cursor (desktop only, see CustomCursor.tsx) */
+.custom-cursor-active { cursor: none; }
+@media (hover: none) {
+  .custom-cursor-active { cursor: auto; }
+}
+
+/* Focus visibility - accessibility */
+:focus-visible {
+  outline: 2px solid #55ff55;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-pixel-shadow {
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+}
