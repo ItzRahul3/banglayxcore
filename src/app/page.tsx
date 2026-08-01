@@ -1,12 +1,12 @@
 import {
-
-export const runtime = "edge";
   Package, Coins, Swords, MapPinned, Briefcase, Gift,
   ThumbsUp, Boxes, Shuffle, Users2, Gauge,
 } from "lucide-react";
 import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import { getSiteSettings } from "@/lib/settings";
+
+export const runtime = "edge";
 
 const FEATURES = [
   { icon: Package, title: "Keep Inventory Enabled", description: "Never lose your gear on death — jump back into the action instantly." },
