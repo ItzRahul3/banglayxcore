@@ -9,6 +9,11 @@ let cache: { data: McStatus; expires: number } | null = null;
 async function fetchStatus(ip: string): Promise<McStatus> {
   // mcsrvstat.us is a free, no-key-required Minecraft server status API.
   const res = await fetch(`https://api.mcsrvstat.us/3/${encodeURIComponent(ip)}`, {
+    // mcsrvstat.us requires a descriptive, non-empty User-Agent header or it
+    // rejects the request.
+    headers: {
+      "User-Agent": "BanglaYXCORE-StatusWidget/1.0 (+https://banglayxcore.fun)",
+    },
     // Next's own fetch cache is separate from our in-memory cache; disable it
     // so our manual TTL is the single source of truth.
     cache: "no-store",
