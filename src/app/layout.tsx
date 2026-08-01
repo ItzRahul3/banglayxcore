@@ -9,6 +9,8 @@ import DiscordFloatingButton from "@/components/DiscordFloatingButton";
 import VisitTracker from "@/components/VisitTracker";
 import { getSiteSettings } from "@/lib/settings";
 
+export const runtime = "edge";
+
 const pixel = Press_Start_2P({
   weight: "400",
   subsets: ["latin"],
