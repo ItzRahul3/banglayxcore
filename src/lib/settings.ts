@@ -5,7 +5,7 @@ const DEFAULT_SETTINGS: SiteSettings = {
   server_name: "BanglaYX CORE",
   java_ip: "play.banglayxcore.fun",
   bedrock_ip: "play.banglayxcore.fun",
-  bedrock_port: 19193,
+  bedrock_port: 25579,
   discord_invite: "https://discord.gg/bWTWSUPK2y",
   discord_server_id: "",
   hero_background_url: "",
