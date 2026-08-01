@@ -2,8 +2,6 @@ import { MessageSquare, Server } from "lucide-react";
 import CopyButton from "@/components/CopyButton";
 import { getSiteSettings } from "@/lib/settings";
 
-export const runtime = "edge";
-
 export const metadata = { title: "Contact — BanglaYX CORE" };
 
 export default async function ContactPage() {

@@ -6,8 +6,6 @@ import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import { getSiteSettings } from "@/lib/settings";
 
-export const runtime = "edge";
-
 const FEATURES = [
   { icon: Package, title: "Keep Inventory Enabled", description: "Never lose your gear on death — jump back into the action instantly." },
   { icon: Coins, title: "Economy Survival", description: "Buy, sell, and trade in a player-driven in-game economy." },
